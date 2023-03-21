@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    display: flex;
+    flex-flow: row;
+}
+
+#display {
+    position: relative;
+    display: inline-block;
+}
+/* healthBar and timer contain */
+#top {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.barWrapper {
+    width: 100%;
+    /* height: 30px; */
+    border: 4px solid white;
+}
+#player {
+    border-right: 0px;
+}
+#enemy {
+    border-left: 0px;
+}
+/* display max health */
+.maxHealthBar {
+    display: flex;
+    background: red;
+    width: 100%;
+    height: 30px;
+}
+/* to shrink toward the center */
+#playerHealth {
+    justify-content: flex-end;
+}
+#enemyHealth {
+    justify-content: flex-start;
+}
+/* display current health */
+.healthBar {
+    width: 100%;
+    background: #818CF8;
+    transition: 0.5s;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 100px;
+    height: 50px;
+    flex-shrink: 0;
+    color: white;
+    border: 4px solid white;
+}
+
+#fps {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    background: #818CF8;
+    align-items: center;
+    justify-content: center;
+}
+#fps span {
+    font-size: 40px;
+}

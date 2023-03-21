@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="display">
+        <div id="top" style="display: none;">
+            <!-- player health -->
+            <div id="player" class="barWrapper">
+                <div id="playerHealth"  class="maxHealthBar">
+                    <div class="healthBar"></div>
+                </div>
+            </div>
+            <!-- timer -->
+            <div id="timer">
+                10
+            </div>
+            <!-- enemy health -->
+            <div id="enemy" class="barWrapper">
+                <div id="enemyHealth" class="maxHealthBar">
+                    <div class="healthBar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="displayText" style="position: absolute; color: white; display: flex; align-items: center; justify-content: center; top: 0; right: 0; bottom: 0; left: 0; display: none;">Tie</div>
+        <canvas></canvas>
+    </div>
+    <div id="fps">
+        <span></span>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
